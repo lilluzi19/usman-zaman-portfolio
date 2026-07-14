@@ -1,0 +1,184 @@
+html,
+body {
+  height: 100%;
+}
+
+html {
+  scrollbar-width: thin;
+  scrollbar-color: var(--accent-color) transparent;
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: color-mix(in srgb, var(--accent-color), black 10%);
+  border-radius: 100px;
+  border: 2px solid transparent;
+  background-clip: padding-box;
+  transition: background-color 0.4s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: color-mix(in srgb, var(--accent-color), black 25%);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: var(--font-body);
+}
+
+main {
+  flex: 1;
+}
+
+html.theme-changing,
+html.theme-changing body,
+html.theme-changing main,
+html.theme-changing header,
+html.theme-changing footer,
+html.theme-changing section,
+html.theme-changing .topbar,
+html.theme-changing .main-header,
+html.theme-changing .mobile-nav-drawer,
+html.theme-changing .footer-top,
+html.theme-changing .footer-bottom,
+html.theme-changing .hero,
+html.theme-changing .projects,
+html.theme-changing .about,
+html.theme-changing .skills,
+html.theme-changing .contact,
+html.theme-changing .project-card,
+html.theme-changing .about-image,
+html.theme-changing .about-points div,
+html.theme-changing .skills-card,
+html.theme-changing .skills-icon,
+html.theme-changing .contact-info,
+html.theme-changing .contact-form,
+
+html.theme-changing .footer-socials a,
+html.theme-changing .tech-badge,
+html.theme-changing input,
+html.theme-changing textarea {
+  transition:
+    background 0.6s ease,
+    background-color 0.6s ease,
+    border-color 0.6s ease,
+    box-shadow 0.6s ease !important;
+}
+
+html.theme-changing h1,
+html.theme-changing h2,
+html.theme-changing h3,
+html.theme-changing h4,
+html.theme-changing h5,
+html.theme-changing h6,
+html.theme-changing p,
+html.theme-changing a,
+html.theme-changing span:not(.sun):not(.moon),
+html.theme-changing strong,
+html.theme-changing small,
+html.theme-changing li,
+html.theme-changing cite,
+html.theme-changing blockquote,
+html.theme-changing button,
+html.theme-changing input,
+html.theme-changing textarea,
+html.theme-changing label,
+html.theme-changing i,
+html.theme-changing .section-title span,
+html.theme-changing .hero-tagline,
+html.theme-changing .project-meta span,
+html.theme-changing .about-btn,
+html.theme-changing .contact-detail i,
+html.theme-changing .contact-label,
+html.theme-changing .contact-form-tag,
+html.theme-changing .footer-links a,
+html.theme-changing .credits a {
+  transition:
+    color 0.6s ease,
+    background-color 0.6s ease,
+    border-color 0.6s ease,
+    box-shadow 0.6s ease !important;
+}
+
+html.theme-changing *::before,
+html.theme-changing *::after {
+  transition:
+    background 0.6s ease,
+    background-color 0.6s ease,
+    border-color 0.6s ease,
+    box-shadow 0.6s ease,
+    opacity 0.6s ease !important;
+}
+
+html.theme-changing input::placeholder,
+html.theme-changing textarea::placeholder {
+  transition: color 0.6s ease !important;
+}
+
+html.theme-changing i {
+  transition: color 0.6s ease !important;
+}
+
+body.preloader-active {
+  overflow: hidden;
+  height: 100vh;
+  height: 100svh;
+  height: 100dvh;
+  touch-action: none;
+}
+
+html:has(body.preloader-active),
+html:has(body.preloader-active) body,
+body.preloader-active {
+  background-color: var(--background-color) !important;
+}
+
+body.preloader-active,
+body.preloader-active.index-page,
+body.preloader-active.index-page .main {
+  background-color: var(--background-color) !important;
+}
+
+@media (max-width: 1024px) {
+
+  html,
+  body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+    scroll-behavior: smooth !important;
+  }
+
+  body:not(.preloader-active).index-page,
+  body:not(.preloader-active).index-page .main {
+    background-color: var(--nav-background-color);
+  }
+
+  main section[id] {
+    scroll-margin-top: 75px;
+  }
+
+  #hero {
+    scroll-margin-top: 0;
+  }
+
+  #contact {
+    scroll-margin-top: 75px;
+  }
+
+  [data-aos] {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+
+}

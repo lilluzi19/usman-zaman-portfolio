@@ -1,0 +1,346 @@
+.contact {
+  padding-top: 40px;
+  padding-bottom: 60px;
+  background: var(--background2-color);
+}
+
+.contact .contact-content {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 2rem;
+  padding-top: 50px;
+}
+
+.contact .contact-info,
+.contact .contact-form {
+  border-radius: 15px;
+  background: var(--surface-color);
+  box-shadow: 0 15px 40px color-mix(in srgb, var(--accent-color), transparent 80%);
+}
+
+.contact .contact-info {
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact .contact-label {
+  display: inline-block;
+  margin-bottom: 1rem;
+  color: var(--accent-color);
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.contact .contact-info h3 {
+  margin: 0 0 1.2rem;
+  color: var(--text-color);
+  font-size: 2.4rem;
+  font-weight: 600;
+  line-height: 1.1;
+}
+
+.contact .contact-info p {
+  margin: 0;
+  color: var(--muted-text-color);
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+.contact .contact-details {
+  display: grid;
+  gap: 1.4rem;
+  margin-top: 2.5rem;
+}
+
+.contact .contact-detail {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.contact .contact-detail i {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: color-mix(in srgb, var(--accent-color), transparent 90%);
+  color: var(--accent-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  transition: 0.4s ease;
+}
+
+.contact .contact-detail i:hover {
+  transform: scale(1.07);
+}
+
+.contact .contact-detail span {
+  display: block;
+  margin-bottom: 0.25rem;
+  color: var(--accent-color);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.contact .contact-detail a,
+.contact .contact-detail p {
+  color: var(--text-color);
+  text-decoration: none;
+  font-size: 0.98rem;
+}
+
+.contact .contact-message {
+  max-height: 0;
+  margin-top: 0;
+  padding: 0 1.2rem;
+  border-radius: 15px;
+  opacity: 0;
+  overflow: hidden;
+  color: var(--text-color);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  transition: 0.4s ease;
+}
+
+.contact .contact-message.show {
+  max-height: 140px;
+  padding: 1rem 1.2rem;
+  opacity: 1;
+}
+
+.contact .contact-message.error {
+  background: #fde3d8;
+  color: #d93000;
+}
+
+.contact .contact-message.sending {
+  background: #f3eee8;
+  color: #b86b2d;
+}
+
+.contact .contact-message.success {
+  background: #e2f3df;
+  color: #0c9b34;
+}
+
+.contact .contact-form {
+  padding: 2.5rem;
+}
+
+.contact .contact-form-tag {
+  display: inline-block;
+  margin-bottom: 1rem;
+  color: var(--accent-color);
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.contact .contact-form h3 {
+  margin-bottom: 0.75rem;
+  color: var(--text-color);
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.contact .contact-form p {
+  margin-bottom: 2rem;
+  color: var(--muted-text-color);
+  line-height: 1.7;
+}
+
+.contact .contact-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.contact .contact-form input,
+.contact .contact-form textarea {
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 1rem 1.1rem;
+  border: 0;
+  border-radius: 15px;
+  background-color:  color-mix(in srgb, var(--surface-color), black 10%);
+  color: var(--text-color);
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  outline: none;
+  border: 2px solid transparent;
+  transition: 0.4s ease;
+}
+
+.contact .contact-form input:hover,
+.contact .contact-form textarea:hover {
+  border-color: var(--accent-color);
+}
+
+.contact .contact-form textarea {
+  min-height: 190px;
+  resize: vertical;
+}
+
+.contact .contact-form input::placeholder,
+.contact .contact-form textarea::placeholder {
+  color: var(--muted-text-color);
+}
+
+.contact .contact-form input:focus,
+.contact .contact-form textarea:focus {
+  border-color: var(--accent-color);
+  box-shadow: 0 0 0 5px color-mix(in srgb, var(--accent-color), transparent 75%);
+  outline: none;
+}
+
+.contact .contact-form button {
+  display: block;
+  margin: 0 auto;
+  min-width: 180px;
+  min-height: 50px;
+  border: 0;
+  border-radius: 15px;
+  background: var(--accent-color);
+  color: var(--text-color);
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.4s ease;
+}
+
+.contact .contact-form button:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px color-mix(in srgb, var(--accent-color), transparent 80%);
+}
+
+@media (max-width: 1024px) {
+
+  .contact {
+    padding-top: 25px;
+    padding-bottom: 35px;
+  }
+
+  .contact .contact-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    padding-top: 2.2rem;
+  }
+
+  .contact .contact-form {
+    order: 1;
+    padding: 1.5rem 1.2rem;
+    border-radius: 15px;
+    text-align: center;
+  }
+
+  .contact .contact-info {
+    order: 2;
+    padding: 1.5rem 1.2rem;
+    border-radius: 15px;
+    text-align: center;
+  }
+
+  .contact .contact-form-tag,
+  .contact .contact-label {
+    margin-bottom: 0.75rem;
+    font-size: 0.68rem;
+    letter-spacing: 0.18em;
+  }
+
+  .contact .contact-form h3,
+  .contact .contact-info h3 {
+    font-size: 1.65rem;
+    line-height: 1.15;
+  }
+
+  .contact .contact-form p,
+  .contact .contact-info p {
+    font-size: 0.85rem;
+    line-height: 1.65;
+  }
+
+  .contact .contact-row {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .contact .contact-form input,
+  .contact .contact-form textarea {
+    margin-bottom: 0.85rem;
+    padding: 0.9rem 1rem;
+    border-radius: 15px;
+    font-size: 0.82rem;
+    text-align: center;
+  }
+
+  .contact .contact-form input::placeholder,
+  .contact .contact-form textarea::placeholder {
+    text-align: center;
+  }
+
+  .contact .contact-form input:hover,
+  .contact .contact-form textarea:hover {
+    border-color: transparent;
+  }
+
+  .contact .contact-form textarea {
+    min-height: 160px;
+  }
+
+  .contact .contact-form button {
+    min-width: 100%;
+    min-height: 48px;
+    border-radius: 15px;
+    font-size: 0.72rem;
+  }
+
+  .contact .contact-form button:hover {
+    transform: none;
+    box-shadow: none;
+  }
+
+  .contact .contact-details {
+    gap: 1rem;
+    margin-top: 1.5rem;
+  }
+
+  .contact .contact-detail {
+    justify-content: center;
+    align-items: center;
+    gap: 0.8rem;
+  }
+
+  .contact .contact-detail i {
+    width: 38px;
+    height: 38px;
+    font-size: 1rem;
+    flex-shrink: 0;
+  }
+
+  .contact .contact-detail span {
+    font-size: 0.65rem;
+  }
+
+  .contact .contact-detail a,
+  .contact .contact-detail p {
+    font-size: 0.82rem;
+  }
+
+  .contact .contact-message.show {
+    margin-top: 1rem;
+    padding: 0.85rem 1rem;
+    font-size: 0.9rem;
+  }
+
+}

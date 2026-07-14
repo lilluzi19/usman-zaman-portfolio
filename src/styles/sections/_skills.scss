@@ -1,0 +1,142 @@
+.skills {
+  padding-top: 40px;
+  padding-bottom: 60px;
+  background: var(--background-color);
+}
+
+.skills .skills-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.6rem;
+  padding-top: 50px;
+}
+
+.skills .skills-card {
+  position: relative;
+  padding: 1.5rem 1.6rem 0.5rem;
+  border-radius: 15px;
+  background: var(--surface-color);
+  box-shadow: 0 15px 40px color-mix(in srgb, var(--accent-color), transparent 80%);
+  transition: 0.4s ease;
+  overflow: hidden;
+}
+
+.skills .skills-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px color-mix(in srgb, var(--accent-color), transparent 60%);
+}
+
+.skills .skills-card-wrapper {
+  height: 100%;
+}
+
+.skills .skills-card-wrapper .skills-card {
+  height: 100%;
+}
+
+.skills .skills-icon {
+  position: relative;
+  width: 65px;
+  height: 65px;
+  margin-bottom: 1.5rem;
+  border-radius: 50%;
+  background: color-mix(in srgb, var(--accent-color), transparent 80%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.skills .skills-icon img {
+  width: 38px;
+  height: 38px;
+  object-fit: contain;
+  animation: skillsIconPulse 2.5s ease-in-out infinite;
+  transform-origin: center;
+}
+
+.skills .skills-card h3 {
+  position: relative;
+  margin: 0 0 1rem;
+  color: var(--text-color);
+  font-size: 1.45rem;
+  font-weight: 600;
+}
+
+.skills .skills-card p {
+  position: relative;
+  color: var(--muted-text-color);
+  font-size: 0.98rem;
+  line-height: 1.75;
+}
+
+.skills .skills-number {
+  position: absolute;
+  top: 1.4rem;
+  right: 1.7rem;
+  color: var(--accent-color);
+  font-size: 5rem;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: -0.08em;
+  opacity: 0.5;
+}
+
+@media (max-width: 1024px) {
+
+  .skills {
+    padding-top: 25px;
+    padding-bottom: 35px;
+  }
+
+  .skills .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    padding-top: 2.2rem;
+  }
+
+  .skills .skills-card-wrapper {
+    height: auto;
+  }
+
+  .skills .skills-card {
+    min-height: 200px;
+    height: 100%;
+    padding: 1.45rem 1rem 0.5rem;
+    border-radius: 15px;
+  }
+
+  .skills .skills-card:hover {
+    transform: none;
+    box-shadow: 0 15px 40px color-mix(in srgb, var(--accent-color), transparent 80%);
+  }
+
+  .skills .skills-number {
+    top: 0.9rem;
+    right: 1rem;
+    font-size: 3.2rem;
+    opacity: 0.45;
+  }
+
+  .skills .skills-icon {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 1.1rem;
+  }
+
+  .skills .skills-icon img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .skills .skills-card h3 {
+    margin-bottom: 0.7rem;
+    font-size: 1rem;
+    line-height: 1.25;
+  }
+
+  .skills .skills-card p {
+    font-size: 0.76rem;
+    line-height: 1.65;
+  }
+
+}

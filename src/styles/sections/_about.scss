@@ -1,0 +1,211 @@
+.about {
+  padding-top: 40px;
+  padding-bottom: 60px;
+  background: var(--background2-color);
+}
+
+.about .about-content {
+  display: grid;
+  grid-template-columns: 0.95fr 1.05fr;
+  align-items: center;
+  gap: 4rem;
+  padding-top: 50px;
+}
+
+.about .about-image-wrapper {
+  height: 600px;
+  border-radius: 15px;
+}
+
+.about .about-image {
+  position: relative;
+  height: 100%;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 15px 40px color-mix(in srgb, var(--accent-color), transparent 80%);
+  transition: box-shadow 0.4s ease;
+}
+
+.about .about-image:hover {
+  box-shadow: 0 15px 40px color-mix(in srgb, var(--accent-color), transparent 60%);
+}
+
+.about .about-image img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.about .about-image:hover img {
+  transform: scale(1.06);
+}
+
+.about .about-text {
+  max-width: 680px;
+}
+
+.about .about-label {
+  display: inline-block;
+  margin-bottom: 1rem;
+  color: var(--accent-color);
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.about .about-text h3 {
+  margin: 0 0 1.4rem;
+  color: var(--text-color);
+  font-size: 2.7rem;
+  font-weight: 600;
+  line-height: 1.1;
+}
+
+.about .about-text p {
+  margin: 0 0 1.2rem;
+  color: var(--muted-text-color);
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+.about .about-points {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.about .about-points div {
+  padding: 1rem;
+  border-radius: 15px;
+  background: var(--surface-color);
+  box-shadow: 0 15px 40px color-mix(in srgb, var(--accent-color), transparent 80%);
+  transition: 0.4s ease;
+}
+
+.about .about-points div:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px color-mix(in srgb, var(--accent-color), transparent 60%);
+}
+
+.about .about-points strong {
+  display: block;
+  margin-bottom: 0.25rem;
+  color: var(--text-color);
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.about .about-points span {
+  color: var(--muted-text-color);
+  font-size: 0.85rem;
+  font-weight: 400;
+}
+
+.about .about-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  padding: 0 1.5rem;
+  border-radius: 15px;
+  background: var(--accent-color);
+  color: var(--text-color);
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.4s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.9px;
+}
+
+.about .about-btn:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px color-mix(in srgb, var(--accent-color), transparent 80%);
+}
+
+@media (max-width: 1024px) {
+
+  .about {
+    padding-top: 25px;
+    padding-bottom: 35px;
+  }
+
+  .about .about-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2.2rem;
+    padding-top: 2.2rem;
+    text-align: center;
+  }
+
+  .about .about-text {
+    order: 1;
+    max-width: 100%;
+  }
+
+  .about .about-label {
+    margin-bottom: 0.8rem;
+    font-size: 0.68rem;
+    letter-spacing: 0.18em;
+  }
+
+  .about .about-text h3 {
+    margin-bottom: 1rem;
+    font-size: clamp(2rem, 9vw, 2.7rem);
+    line-height: 1.08;
+    letter-spacing: -0.05em;
+  }
+
+  .about .about-text p {
+    max-width: 350px;
+    margin: 0 auto 1rem;
+    font-size: 0.88rem;
+    line-height: 1.7;
+  }
+
+  .about .about-points {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.65rem;
+    margin: 1.5rem 0;
+  }
+
+  .about .about-points div {
+    padding: 0.85rem 0.45rem;
+    border-radius: 15px;
+  }
+
+  .about .about-points div:hover {
+    transform: none !important;
+    box-shadow: 0 15px 40px color-mix(in srgb, var(--accent-color), transparent 80%);
+  }
+
+  .about .about-points strong {
+    font-size: 0.72rem;
+  }
+
+  .about .about-points span {
+    font-size: 0.62rem;
+    line-height: 1.35;
+  }
+
+  .about .about-image-wrapper {
+    display: none;
+  }
+
+  .about .about-btn {
+    min-height: 46px;
+    padding: 0 1.3rem;
+    border-radius: 15px;
+    font-size: 0.72rem;
+  }
+
+  .about .about-btn:hover {
+    transform: none;
+    box-shadow: none;
+  }
+
+}
