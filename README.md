@@ -8,13 +8,12 @@ A modern portfolio built with Next.js, React, and TypeScript, showcasing respons
 
 <ul>
   <li>HTML5.</li>
-  <li>CSS3 / SCSS.</li>
+  <li>CSS3.</li>
+  <li>SCSS.</li>
   <li>TypeScript.</li>
   <li>React.</li>
   <li>Next.js.</li>
-  <li>Node.js.</li>
   <li>Git & GitHub.</li>
-  <li>Vercel.</li>
   <li>Figma.</li>
   <li>Visual Studio Code.</li>
 </ul>
@@ -36,11 +35,11 @@ A modern portfolio built with Next.js, React, and TypeScript, showcasing respons
 
 <h2>Screenshots</h2>
 
-<img width="2543" height="1315" alt="Homepage Light Theme" src="https://github.com/user-attachments/assets/75799c49-4730-410f-bf5c-2697e4eeb82d" />
+<img width="2546" height="1315" alt="Screenshot 2026-07-13 150114" src="https://github.com/user-attachments/assets/9461353d-fcf1-4dac-b98b-e87b5d3b52b2" />
 
 <hr>
 
-<img width="2543" height="1315" alt="Homepage Dark Theme" src="https://github.com/user-attachments/assets/24b4b233-8a41-4703-9ba0-d27ca78716fe" />
+<img width="2548" height="1316" alt="Screenshot 2026-07-13 150118" src="https://github.com/user-attachments/assets/3e63afca-b398-4272-a605-7aa011ec9d85" />
 
 <h2>Live Demo</h2>
 
