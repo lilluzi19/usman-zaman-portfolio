@@ -44,5 +44,5 @@ A modern portfolio built with Next.js, React, and TypeScript, showcasing respons
 <h2>Live Demo</h2>
 
 <p>
-<a href="https://usmanzaman.com/" target="_blank">https://usmanzaman.com/</a>
+<a href="https://usmanzaman.com/" target="_blank">Portfolio Link</a>
 </p>
