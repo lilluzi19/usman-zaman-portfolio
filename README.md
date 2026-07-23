@@ -35,11 +35,11 @@ A modern portfolio built with Next.js, React, and TypeScript, showcasing respons
 
 <h2>Screenshots</h2>
 
-<img width="2546" height="1315" alt="Screenshot 2026-07-13 150114" src="https://github.com/user-attachments/assets/9461353d-fcf1-4dac-b98b-e87b5d3b52b2" />
+<img width="2549" height="1311" alt="Screenshot 2026-07-23 151726" src="https://github.com/user-attachments/assets/9c1450fc-c960-47df-bb33-2720a3b52225" />
 
 <hr>
 
-<img width="2548" height="1316" alt="Screenshot 2026-07-13 150118" src="https://github.com/user-attachments/assets/3e63afca-b398-4272-a605-7aa011ec9d85" />
+<img width="2545" height="1317" alt="Screenshot 2026-07-23 152231" src="https://github.com/user-attachments/assets/6b64a3b6-056b-4c99-b0a2-e4e8377be5ef" />
 
 <h2>Live Demo</h2>
 
