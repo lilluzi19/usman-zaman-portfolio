@@ -27,12 +27,12 @@ const technologyBadges = [
   {
     className: "badge-nextjs",
     src: "/images/hero/nextjs.webp",
-    alt: "NodeJS",
+    alt: "NextJS",
   },
   {
     className: "badge-typescript",
     src: "/images/hero/typescript.webp",
-    alt: "PostgreSQL",
+    alt: "TypeScript",
   },
 ];
 

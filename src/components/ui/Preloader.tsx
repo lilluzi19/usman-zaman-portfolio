@@ -48,7 +48,7 @@ export default function Preloader() {
 
         <h1>Usman Zaman</h1>
 
-        <p>Full-Stack Engineer</p>
+        <p>Front-End Engineer</p>
 
         <div className="preloader-line">
           <span />
