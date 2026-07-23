@@ -25,13 +25,13 @@ const technologyBadges = [
     alt: "React",
   },
   {
-    className: "badge-nodejs",
-    src: "/images/hero/nodejs.webp",
+    className: "badge-nextjs",
+    src: "/images/hero/nextjs.webp",
     alt: "NodeJS",
   },
   {
-    className: "badge-postgresql",
-    src: "/images/hero/postgresql.webp",
+    className: "badge-typescript",
+    src: "/images/hero/typescript.webp",
     alt: "PostgreSQL",
   },
 ];
@@ -122,14 +122,14 @@ export default function Hero() {
             <span className="hero-tagline">Web Developer</span>
 
             <h1>
-              Full-Stack Engineer Building Fast, Modern Web
+              Front-End Engineer Building Fast, Modern Web
               Applications
             </h1>
 
             <p>
               I build responsive web applications with a focus on
               clean UI, performance, and maintainable code using
-              modern front-end and back-end technologies.
+              modern front-end technologies.
             </p>
 
             <div className="hero-buttons">

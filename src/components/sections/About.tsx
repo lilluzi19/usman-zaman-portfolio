@@ -8,7 +8,7 @@ const aboutPoints = [
     description: "Honours Degree",
   },
   {
-    title: "Full-Stack",
+    title: "Front-End",
     description: "Development",
   },
   {
@@ -53,7 +53,7 @@ export default function About() {
             </span>
 
             <h3>
-              I&apos;m Usman, A Full-Stack Engineer, Passionate About
+              I&apos;m Usman, A Front-End Engineer, Passionate About
               Building Modern Web Applications
             </h3>
 

@@ -75,33 +75,6 @@ export const skills: Skill[] = [
   },
   {
     number: "09",
-    name: "Node.js",
-    description:
-      "I use Node.js to build backend services, application logic and APIs using JavaScript outside the browser.",
-    image: "/images/skills/nodejs.webp",
-    alt: "Node.js logo",
-    aosDelay: 500,
-  },
-  {
-    number: "10",
-    name: "PostgreSQL",
-    description:
-      "I use PostgreSQL to design relational databases, manage structured application data and write efficient SQL queries.",
-    image: "/images/skills/postgresql.webp",
-    alt: "PostgreSQL logo",
-    aosDelay: 600,
-  },
-  {
-    number: "11",
-    name: "Express.js",
-    description:
-      "I use Express.js to create Node.js APIs, define routes, apply middleware and handle HTTP requests and responses.",
-    image: "/images/skills/express1.webp",
-    alt: "Express.js logo",
-    aosDelay: 600,
-  },
-  {
-    number: "12",
     name: "Git",
     description:
       "I use Git for version control, tracking changes and maintaining a clear, organised development workflow across projects.",

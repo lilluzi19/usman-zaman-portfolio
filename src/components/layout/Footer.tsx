@@ -51,7 +51,7 @@ export default function Footer() {
 
               <div>
                 <h4>
-                  Full-Stack Engineer Building Fast, Modern Web
+                  Front-End Engineer Building Fast, Modern Web
                   Applications
                 </h4>
 
